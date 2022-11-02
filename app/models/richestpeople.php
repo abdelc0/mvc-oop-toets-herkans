@@ -1,5 +1,5 @@
 <?php
-class auto
+class richestpeople
 
 {
   // Properties, fields
@@ -15,17 +15,17 @@ class auto
 
   // Get all richest people
   // Sort by networth from highest to lowest
-  public function getauto()
+  public function getrichestpeople()
   {
-    $this->db->query("SELECT * FROM `auto` ORDER BY ramen DESC;");
+    $this->db->query("SELECT * FROM `richestpeople` ORDER BY vermogen DESC;");
     $result = $this->db->resultSet();
     return $result;
   }
 
   // Delete richest person
-  public function deleteauto($id)
+  public function deleterichestpeople($id)
   {
-    $this->db->query("DELETE FROM `auto` WHERE id = :id");
+    $this->db->query("DELETE FROM `richestpeople` WHERE id = :id");
     $this->db->bind("id", $id, PDO::PARAM_INT);
     return $this->db->execute();
   }

@@ -7,7 +7,7 @@ class HomePages extends Controller
   // Dit is de constructor
   public function __construct()
   {
-    $this->peopleModel = $this->model('auto');
+    $this->peopleModel = $this->model('richestpeople');
   }
 
   public function index()
@@ -27,7 +27,7 @@ class HomePages extends Controller
 
     $data = [
       'title' => "Homepage",
-      'auto' => $rows
+      'richestpeople' => $rows
     ];
     $this->view('homepages/index', $data);
   }

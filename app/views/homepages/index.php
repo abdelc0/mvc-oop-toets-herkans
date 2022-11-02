@@ -11,6 +11,6 @@
     </tr>
   </thead>
   <tbody>
-    <?= $data["auto"]; ?>
+    <?= $data["richestpeople"]; ?>
   </tbody>
 </table>
