@@ -5,9 +5,9 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>NetWorth</th>
-      <th>MyAge</th>
-      <th>Company</th>
+      <th>vermogen</th>
+      <th>leeftijd</th>
+      <th>bedrijf</th>
     </tr>
   </thead>
   <tbody>
